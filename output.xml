@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190911 09:16:55.491" generator="Robot 3.0.4 (Python 2.7.16 on win32)">
+<suite source="C:\Users\Lek Anusit\Desktop\robot-aek\Search\test.robot" id="s1" name="Test">
+<test id="s1-t1" name="Testcase : Search keyword on Goolge">
+<kw name="open google">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${GOOGLE URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20190911 09:16:55.736" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com'</msg>
+<status status="PASS" endtime="20190911 09:17:02.139" starttime="20190911 09:16:55.735"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190911 09:17:06.259" starttime="20190911 09:17:02.139"></status>
+</kw>
+<kw name="Set Selenium Timeout" library="Selenium2Library">
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<arguments>
+<arg>0.3</arg>
+</arguments>
+<status status="PASS" endtime="20190911 09:17:06.260" starttime="20190911 09:17:06.259"></status>
+</kw>
+<status status="PASS" endtime="20190911 09:17:06.260" starttime="20190911 09:16:55.735"></status>
+</kw>
+<kw name="search on google">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>name=q</arg>
+<arg>Should Be Equal</arg>
+</arguments>
+<msg timestamp="20190911 09:17:06.262" level="INFO">Typing text 'Should Be Equal' into text field 'name=q'</msg>
+<status status="PASS" endtime="20190911 09:17:06.456" starttime="20190911 09:17:06.261"></status>
+</kw>
+<kw name="Submit Form" library="Selenium2Library">
+<doc>Submits a form identified by `locator`.</doc>
+<msg timestamp="20190911 09:17:06.456" level="INFO">Submitting form 'None'.</msg>
+<status status="PASS" endtime="20190911 09:17:07.952" starttime="20190911 09:17:06.456"></status>
+</kw>
+<status status="PASS" endtime="20190911 09:17:07.953" starttime="20190911 09:17:06.261"></status>
+</kw>
+<kw name="click link3">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="rso"]/div/div/div[3]/div/div/div[1]/a/h3/div</arg>
+</arguments>
+<status status="PASS" endtime="20190911 09:17:07.992" starttime="20190911 09:17:07.953"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="rso"]/div/div/div[3]/div/div/div[1]/a/h3/div</arg>
+</arguments>
+<msg timestamp="20190911 09:17:07.992" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div/div/div[3]/div/div/div[1]/a/h3/div'.</msg>
+<status status="PASS" endtime="20190911 09:17:12.312" starttime="20190911 09:17:07.992"></status>
+</kw>
+<status status="PASS" endtime="20190911 09:17:12.312" starttime="20190911 09:17:07.953"></status>
+</kw>
+<kw name="check web3">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Should</arg>
+</arguments>
+<status status="PASS" endtime="20190911 09:17:12.341" starttime="20190911 09:17:12.314"></status>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg timestamp="20190911 09:17:12.342" level="INFO">Executing JavaScript:
+return window.location.href;</msg>
+<msg timestamp="20190911 09:17:12.350" level="INFO">${url} = https://developers.ascendcorp.com/%E0%B9%80%E0%B8%97%E0%B8%84%E0%B8%99%E0%B8%B4%E0%B8%84%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%82%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%AA%E0%B9%80%E0%...</msg>
+<status status="PASS" endtime="20190911 09:17:12.350" starttime="20190911 09:17:12.341"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${link3 url}</arg>
+</arguments>
+<status status="PASS" endtime="20190911 09:17:12.351" starttime="20190911 09:17:12.350"></status>
+</kw>
+<status status="PASS" endtime="20190911 09:17:12.351" starttime="20190911 09:17:12.314"></status>
+</kw>
+<kw name="go to back">
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20190911 09:17:13.102" starttime="20190911 09:17:12.352"></status>
+</kw>
+<status status="PASS" endtime="20190911 09:17:13.102" starttime="20190911 09:17:12.352"></status>
+</kw>
+<kw name="click link4">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="rso"]/div/div/div[4]/div/div/div[1]/a[1]/h3/div</arg>
+</arguments>
+<status status="PASS" endtime="20190911 09:17:13.149" starttime="20190911 09:17:13.104"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="rso"]/div/div/div[4]/div/div/div[1]/a[1]/h3/div</arg>
+</arguments>
+<msg timestamp="20190911 09:17:13.149" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div/div/div[4]/div/div/div[1]/a[1]/h3/div'.</msg>
+<status status="PASS" endtime="20190911 09:17:14.253" starttime="20190911 09:17:13.149"></status>
+</kw>
+<status status="PASS" endtime="20190911 09:17:14.253" starttime="20190911 09:17:13.104"></status>
+</kw>
+<kw name="check web4">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Should</arg>
+</arguments>
+<status status="PASS" endtime="20190911 09:17:14.279" starttime="20190911 09:17:14.254"></status>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg timestamp="20190911 09:17:14.280" level="INFO">Executing JavaScript:
+return window.location.href;</msg>
+<msg timestamp="20190911 09:17:14.285" level="INFO">${url} = https://shouldjs.github.io/</msg>
+<status status="PASS" endtime="20190911 09:17:14.285" starttime="20190911 09:17:14.280"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${link4 url}</arg>
+</arguments>
+<status status="PASS" endtime="20190911 09:17:14.286" starttime="20190911 09:17:14.286"></status>
+</kw>
+<status status="PASS" endtime="20190911 09:17:14.286" starttime="20190911 09:17:14.254"></status>
+</kw>
+<kw name="go to back">
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20190911 09:17:14.975" starttime="20190911 09:17:14.287"></status>
+</kw>
+<status status="PASS" endtime="20190911 09:17:14.975" starttime="20190911 09:17:14.287"></status>
+</kw>
+<kw name="click link5">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>xpath=//*[@id="rso"]/div/div/div[5]/div/div/div[1]/a[1]/h3/div</arg>
+</arguments>
+<status status="PASS" endtime="20190911 09:17:15.016" starttime="20190911 09:17:14.977"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>xpath=//*[@id="rso"]/div/div/div[5]/div/div/div[1]/a[1]/h3/div</arg>
+</arguments>
+<msg timestamp="20190911 09:17:15.016" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div/div/div[5]/div/div/div[1]/a[1]/h3/div'.</msg>
+<status status="PASS" endtime="20190911 09:17:16.501" starttime="20190911 09:17:15.016"></status>
+</kw>
+<status status="PASS" endtime="20190911 09:17:16.501" starttime="20190911 09:17:14.976"></status>
+</kw>
+<kw name="check web5">
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>Should</arg>
+</arguments>
+<status status="PASS" endtime="20190911 09:17:16.526" starttime="20190911 09:17:16.504"></status>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<doc>Executes the given JavaScript code.</doc>
+<arguments>
+<arg>return window.location.href;</arg>
+</arguments>
+<assign>
+<var>${url}</var>
+</assign>
+<msg timestamp="20190911 09:17:16.526" level="INFO">Executing JavaScript:
+return window.location.href;</msg>
+<msg timestamp="20190911 09:17:16.534" level="INFO">${url} = https://stackoverflow.com/questions/41681163/robot-should-be-equal-as-strings</msg>
+<status status="PASS" endtime="20190911 09:17:16.534" starttime="20190911 09:17:16.526"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>${link5 url}</arg>
+</arguments>
+<status status="PASS" endtime="20190911 09:17:16.535" starttime="20190911 09:17:16.534"></status>
+</kw>
+<status status="PASS" endtime="20190911 09:17:16.535" starttime="20190911 09:17:16.504"></status>
+</kw>
+<kw name="go to back">
+<kw name="Go Back" library="Selenium2Library">
+<doc>Simulates the user clicking the "back" button on their browser.</doc>
+<status status="PASS" endtime="20190911 09:17:17.132" starttime="20190911 09:17:16.536"></status>
+</kw>
+<status status="PASS" endtime="20190911 09:17:17.133" starttime="20190911 09:17:16.536"></status>
+</kw>
+<status status="PASS" endtime="20190911 09:17:17.134" critical="yes" starttime="20190911 09:16:55.734"></status>
+</test>
+<status status="PASS" endtime="20190911 09:17:17.137" starttime="20190911 09:16:55.495"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Test" pass="1">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
