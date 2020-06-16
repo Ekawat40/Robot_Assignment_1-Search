@@ -44,13 +44,3 @@ go to back
 *** Testcases ***
 Testcase : Search keyword on Goolge
     open google
-    search on google
-    click link3
-    check web3
-    go to back
-    click link4
-    check web4
-    go to back
-    click link5
-    check web5
-    go to back
