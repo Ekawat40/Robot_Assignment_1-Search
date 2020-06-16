@@ -44,3 +44,4 @@ go to back
 *** Testcases ***
 Testcase : Search keyword on Goolge
     open google
+	click link3
