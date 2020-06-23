@@ -43,7 +43,8 @@ go to back
 
 *** Testcases ***
 Testcase : Search keyword on Goolge1
-	[Tags]    Owner-Brown1
+    [Tags]    active    success    All    TH    Sanity
+	[Tags]    9 AM to 6 PM
     open google
 
 Testcase : Search keyword on Goolge2
@@ -51,7 +52,7 @@ Testcase : Search keyword on Goolge2
     open google
 
 Testcase : Search keyword on Goolge3
-	[Tags]    Owner-Brown1
+	[Tags]    9 AM to 6 PM
     open google
 
 Testcase : Search keyword on Goolge4
