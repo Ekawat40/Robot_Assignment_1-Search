@@ -51,7 +51,7 @@ Testcase : Search keyword on Goolge2
     open google
 
 Testcase : Search keyword on Goolge3
-	[Tags]    9 AM to 6 PM
+	[Tags]    9AMto6PM
     open google
 
 Testcase : Search keyword on Goolge4
