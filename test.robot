@@ -42,5 +42,18 @@ go to back
     GO BACK
 
 *** Testcases ***
-Testcase : Search keyword on Goolge
+Testcase : Search keyword on Goolge1
+	[Tags]    Owner-Brown1
+    open google
+
+Testcase : Search keyword on Goolge2
+	[Tags]    Owner-Brown2
+    open google
+
+Testcase : Search keyword on Goolge3
+	[Tags]    Owner-Brown1
+    open google
+
+Testcase : Search keyword on Goolge4
+	[Tags]    Owner-Brown2
     open google
