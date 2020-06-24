@@ -47,7 +47,7 @@ Testcase : Search keyword on Goolge1
     open google
 
 Testcase : Search keyword on Goolge2
-	[Tags]    Owner-Brown2
+	[Tags]    Owner-Brown2   success
     open google
 
 Testcase : Search keyword on Goolge3
@@ -55,5 +55,5 @@ Testcase : Search keyword on Goolge3
     open google
 
 Testcase : Search keyword on Goolge4
-	[Tags]    Owner-Brown2
+	[Tags]    Owner-Brown2   success
     open google
